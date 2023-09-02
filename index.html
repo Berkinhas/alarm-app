@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+Author  = Berkinhas
+Date    = 2023-08-30
+File    = index.html
+-->
+<html lang="pt-br">
+  <head>
+    <title>Alarm App</title>
+    <link rel="shortcut icon" href="#" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Inter:wght@100;500&family=Sora:wght@100;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8e310b09c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Alarm App</h1>
+    <div class="container-pai">
+      <div class="container">
+        <div id="date-now">
+          <p class="date">15:08:13</p>
+        </div>
+        <div class="alarm">
+          <input
+            class="hour"
+            type="number"
+            name="hour"
+            value=""
+            placeholder="08"
+          />
+          <input
+            class="minute"
+            type="number"
+            name="minutes"
+            value=""
+            placeholder="30"
+          />
+          <button id="add-alarm" type="button">Add Alarm</button>
+        </div>
+        <div>
+          <ul class="alarm-list">
+            <li>
+              <p class="horario">08:30</p>
+              <input
+                id="toggle"
+                class="toggle"
+                type="checkbox"
+                name=""
+                value=""
+              />
+              <label for="toggle"></label>
+              <button>
+                <i id="trash" class="fa-solid fa-trash-can"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
